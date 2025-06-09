@@ -4,7 +4,7 @@
 import { renderApp } from './app.js';
 
 // Импортируем функцию для навигации без перезагрузки
-import { navigateTo } from './utils/dom.js';
+import { navigateTo } from './utils/navigateTo.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');

@@ -6,8 +6,10 @@ export function Header() {
 
   // Важный момент: onclick вызывает navigateTo, чтобы не было перезагрузки
   nav.innerHTML = `
-    <a href="/" onclick="event.preventDefault(); navigateTo('/')">Главная</a> |
-    <a href="/about" onclick="event.preventDefault(); navigateTo('/about')">О нас</a>
+    <a class="header-nav" href="/" onclick="event.preventDefault(); navigateTo('/')">Главная</a> 
+    <a class="header-nav" href="/about" onclick="event.preventDefault(); navigateTo('/about')">О нас</a>
+    <a class="header-nav" href="/contacts" onclick="event.preventDefault(); navigateTo('/contacts')">Контакты</a>
+    <a class="header-nav" href="/contacts" onclick="event.preventDefault(); navigateTo('/posts')">Посты</a>
   `;
 
   return nav;

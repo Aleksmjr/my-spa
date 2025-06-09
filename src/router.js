@@ -2,7 +2,9 @@
 
 // Импортируем компоненты-страницы
 import { HomeView } from './views/HomeView.js';
+import { ContactView } from './views/ContactView.js';
 import { AboutView } from './views/AboutView.js';
+import { Post } from './views/Post.js';
 
 // Возвращает компонент для текущего URL
 export function router() {
@@ -11,6 +13,10 @@ export function router() {
   switch (path) {
     case '/about':
       return AboutView();
+    case '/contacts':
+      return ContactView();
+    case '/posts':
+      return Post();
     case '/':
     default:
       return HomeView();
