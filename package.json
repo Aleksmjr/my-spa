@@ -19,15 +19,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "esbuild": "^0.25.5",
-    "fdir": "^6.4.5",
-    "nanoid": "^3.3.11",
-    "picocolors": "^1.1.1",
-    "picomatch": "^4.0.2",
-    "postcss": "^8.5.4",
-    "rollup": "^4.42.0",
-    "source-map-js": "^1.2.1",
-    "tinyglobby": "^0.2.14"
+    "nanoid": "^3.3.11"
   },
   "lint-staged": {
     "*.{js,mjs,cjs}": "eslint --fix"
